@@ -17,6 +17,7 @@ import os
 import logging
 import random
 import json
+import time
 from flask import Flask, request
 
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
@@ -34,6 +35,7 @@ def move():
     # if ememny
     # return "T"
     #logger.info(request.json[9:])
+     
     return moves[random.randrange(len(moves))]
 
 if __name__ == "__main__":
