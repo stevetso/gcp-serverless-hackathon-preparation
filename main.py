@@ -24,7 +24,7 @@ logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-moves = ['F', 'T', 'L', 'R']
+moves = [ 'T', 'L']
 @app.route("/", methods=['POST'])
 def move():
     request.get_data()
