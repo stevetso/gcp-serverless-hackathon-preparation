@@ -33,7 +33,7 @@ def move():
     # get direction
     # if ememny
     # return "T"
-    logger.info(request.json[9:])
+    #logger.info(request.json[9:])
     return moves[random.randrange(len(moves))]
 
 if __name__ == "__main__":
