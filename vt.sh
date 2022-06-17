@@ -1,0 +1,1 @@
+curl -d '{ "_links": { "self": { "href": "https://sample-bot-qcvyggyvoq-de.a.run.app" } }, "arena": { "dims": [4,3], "state": { "https://sample-bot-qcvyggyvoq-de.a.run.app": { "x": 0, "y": 0, "direction": "N", "wasHit": false, "score": 0 } } } }' -H "Content-Type: application/json" -X POST -w "\n"  https://sample-bot-qcvyggyvoq-de.a.run.app

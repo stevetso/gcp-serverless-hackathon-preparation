@@ -1,0 +1,8 @@
+# Enable necessary APIs
+gcloud services enable \
+  container.googleapis.com \
+  containerregistry.googleapis.com \
+  cloudbuild.googleapis.com \
+  cloudapis.googleapis.com \
+  run.googleapis.com \
+  --project=$PROJECT_ID
