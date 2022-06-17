@@ -25,8 +25,8 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 #moves = [ 'F', 'F', 'F', 'F', 'F',  'T', 'L', 'R']
-#moves = [ 'T', 'T', 'R']
-moves = [ 'T' ]
+moves = [ 'T', 'T', 'R']
+#moves = [ 'T' ]
 #moves = ['F', 'T', 'L',  'F', 'F',  'T', 'T']
 @app.route("/", methods=['POST'])
 def move():
