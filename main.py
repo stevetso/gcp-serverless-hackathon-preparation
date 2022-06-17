@@ -16,6 +16,7 @@
 import os
 import logging
 import random
+import json
 from flask import Flask, request
 
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
@@ -23,11 +24,15 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 moves = ['F', 'T', 'L', 'R']
-
 @app.route("/", methods=['POST'])
 def move():
     request.get_data()
     logger.info(request.json)
+    # get current postiion
+    # was Hit 
+    # get direction
+    # if ememny
+    #  return "T"
     return moves[random.randrange(len(moves))]
 
 if __name__ == "__main__":
